@@ -1,0 +1,203 @@
+# Servicio Suma
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servicio-suma
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: servicio-suma
+  template:
+    metadata:
+      labels:
+        app: servicio-suma
+    spec:
+      containers:
+      - name: suma
+        image: calculadora-suma:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            memory: "32Mi"
+            cpu: "30m"
+          limits:
+            memory: "64Mi"
+            cpu: "50m"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: servicio-suma
+spec:
+  selector:
+    app: servicio-suma
+  ports:
+  - port: 5000
+    targetPort: 5000
+
+# Servicio Resta
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servicio-resta
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: servicio-resta
+  template:
+    metadata:
+      labels:
+        app: servicio-resta
+    spec:
+      containers:
+      - name: resta
+        image: calculadora-resta:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            memory: "32Mi"
+            cpu: "30m"
+          limits:
+            memory: "64Mi"
+            cpu: "50m"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: servicio-resta
+spec:
+  selector:
+    app: servicio-resta
+  ports:
+  - port: 5000
+    targetPort: 5000
+
+# Servicio Multiplicación
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servicio-multiplicacion
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: servicio-multiplicacion
+  template:
+    metadata:
+      labels:
+        app: servicio-multiplicacion
+    spec:
+      containers:
+      - name: multiplicacion
+        image: calculadora-multiplicacion:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "50m"
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: servicio-multiplicacion
+spec:
+  selector:
+    app: servicio-multiplicacion
+  ports:
+  - port: 5000
+    targetPort: 5000
+
+# Servicio División
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servicio-division
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: servicio-division
+  template:
+    metadata:
+      labels:
+        app: servicio-division
+    spec:
+      containers:
+      - name: division
+        image: calculadora-division:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            memory: "32Mi"
+            cpu: "30m"
+          limits:
+            memory: "64Mi"
+            cpu: "50m"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: servicio-division
+spec:
+  selector:
+    app: servicio-division
+  ports:
+  - port: 5000
+    targetPort: 5000
+
+# Servicio Exponente
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servicio-exponente
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: servicio-exponente
+  template:
+    metadata:
+      labels:
+        app: servicio-exponente
+    spec:
+      containers:
+      - name: exponente
+        image: calculadora-exponente:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "50m"
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: servicio-exponente
+spec:
+  selector:
+    app: servicio-exponente
+  ports:
+  - port: 5000
+    targetPort: 5000

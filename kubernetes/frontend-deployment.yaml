@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-calculadora
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend-calculadora
+  template:
+    metadata:
+      labels:
+        app: frontend-calculadora
+    spec:
+      containers:
+      - name: frontend
+        image: calculadora-frontend:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: SUMA_SERVICE
+          value: "servicio-suma"
+        - name: RESTA_SERVICE
+          value: "servicio-resta"
+        - name: MULTIPLICACION_SERVICE
+          value: "servicio-multiplicacion"
+        - name: DIVISION_SERVICE
+          value: "servicio-division"
+        - name: EXPONENTE_SERVICE
+          value: "servicio-exponente"
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "50m"
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+spec:
+  selector:
+    app: frontend-calculadora
+  ports:
+  - port: 5000
+    targetPort: 5000
