@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbef8f6c-2bdc-4fb7-b28d-be253f9bf127" name="Changes" comment="final before fire">
+    <list default="true" id="cbef8f6c-2bdc-4fb7-b28d-be253f9bf127" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/monitoring/prometheus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulation/load_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulation/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualization/realtime_dashboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addition/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/addition/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addition/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/addition/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/division/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/division/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/division/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/division/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiplicacion/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiplicacion/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiplicacion/service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/division/service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiplication/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiplication/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/multiplication/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/multiplication/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resta/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resta/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resta/service.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/subtraction/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/subtraction/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suma/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/suma/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/suma/service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subtraction/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/subtraction/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +32,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -58,13 +57,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.realtime_dashboard.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Diego\Desktop\uni\2025B\Tolerante a fallas\Repositorios\Comp_tol_falla_KBNT\calculadora-kubernetes\frontend\templates" />
@@ -103,12 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1763959970929</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix">
+      <option name="closed" value="true" />
+      <created>1763960396939</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763960396939</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="in" />
     <MESSAGE value="final before fire" />
-    <option name="LAST_COMMIT_MESSAGE" value="final before fire" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

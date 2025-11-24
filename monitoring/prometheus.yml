@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'calculator-services'
+    static_configs:
+      - targets: ['addition-service:5001', 'subtraction-service:5002', 'multiplication-service:5003', 'division-service:5004']
