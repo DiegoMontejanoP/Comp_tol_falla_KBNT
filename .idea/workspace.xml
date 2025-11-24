@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbef8f6c-2bdc-4fb7-b28d-be253f9bf127" name="Changes" comment="in">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculadora-kubernetes/frontend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculadora-kubernetes/frontend/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculadora-kubernetes/frontend/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculadora-kubernetes/frontend/templates/index.html" afterDir="false" />
+    <list default="true" id="cbef8f6c-2bdc-4fb7-b28d-be253f9bf127" name="Changes" comment="final before fire">
+      <change beforePath="$PROJECT_DIR$/addition/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/addition/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addition/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/addition/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/division/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/division/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiplicacion/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiplicacion/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiplicacion/service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiplication/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/multiplication/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resta/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resta/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resta/service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/subtraction/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/subtraction/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suma/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suma/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/suma/service.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,21 +35,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DiegoMontejanoP"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DiegoMontejanoP&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DiegoMontejanoP/Comp_tol_falla_KBNT",
-    "accountId": "99430454-e577-453f-a55a-2f1f0fbaff04"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DiegoMontejanoP/Comp_tol_falla_KBNT&quot;,
+    &quot;accountId&quot;: &quot;99430454-e577-453f-a55a-2f1f0fbaff04&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="35adBLQJsdNGA3t33CM8sc7TSMV" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,13 +58,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Diego\Desktop\uni\2025B\Tolerante a fallas\Repositorios\Comp_tol_falla_KBNT\calculadora-kubernetes\frontend\templates" />
@@ -86,11 +95,20 @@
       <option name="project" value="LOCAL" />
       <updated>1763352111197</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="final before fire">
+      <option name="closed" value="true" />
+      <created>1763959970929</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763959970929</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="in" />
-    <option name="LAST_COMMIT_MESSAGE" value="in" />
+    <MESSAGE value="final before fire" />
+    <option name="LAST_COMMIT_MESSAGE" value="final before fire" />
   </component>
 </project>

@@ -1,1 +1,2 @@
-Flask==2.3.3
+Flask==2.3.3flask==2.3.3
+prometheus_client==0.17.1
