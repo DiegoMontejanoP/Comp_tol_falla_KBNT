@@ -3,6 +3,15 @@
 ![03](https://drive.google.com/uc?id=1jSRheqpygvJ7qKwOnnh4n0jG1-BZjWYP)
 ![04](https://drive.google.com/uc?id=1bOvcvoNJVcEh6u6ZtIbW5FIrbObhVrP9)
 
+# Indice
+[](#)
+1. [Descripción](#Descripción)
+    1. [Arquitectura](#Arquitectura)
+    2. [Estructura de Carpetas](#Estructura de Carpetas)
+2. [Características](#Características)
+
+3. [Uso y Demostración](#Uso y Demostración)
+
 # 📖 Descripción
 
 Este proyecto es una calculadora distribuida construida con una arquitectura de microservicios, donde cada operación matemática (suma, resta, multiplicación, división) es un servicio independiente desplegado en Kubernetes. Incluye un dashboard de visualización en tiempo real para monitorear el rendimiento y uso de los servicios.
