@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  gui:
+    build: ./gui
+    ports:
+      - "5000:5000"
+    environment:
+      - ADDITION_SERVICE=http://addition:5001
+      - SUBTRACTION_SERVICE=http://subtraction:5002
+      - MULTIPLICATION_SERVICE=http://multiplication:5003
+      - DIVISION_SERVICE=http://division:5004
+    depends_on:
+      - addition
+      - subtraction
+      - multiplication
+      - division
+
+  addition:
+    build: ./addition
+    ports:
+      - "5001:5001"
+
+  subtraction:
+    build: ./subtraction
+    ports:
+      - "5002:5002"
+
+  multiplication:
+    build: ./multiplication
+    ports:
+      - "5003:5003"
+
+  division:
+    build: ./division
+    ports:
+      - "5004:5004"

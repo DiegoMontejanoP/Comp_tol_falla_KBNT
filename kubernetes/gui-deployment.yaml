@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calculator-gui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: calculator-gui
+  template:
+    metadata:
+      labels:
+        app: calculator-gui
+    spec:
+      containers:
+      - name: calculator-gui
+        image: calculator-gui:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: ADDITION_SERVICE
+          value: "http://addition-service:5001"
+        - name: SUBTRACTION_SERVICE
+          value: "http://subtraction-service:5002"
+        - name: MULTIPLICATION_SERVICE
+          value: "http://multiplication-service:5003"
+        - name: DIVISION_SERVICE
+          value: "http://division-service:5004"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gui-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: calculator-gui
+  ports:
+  - port: 80
+    targetPort: 5000

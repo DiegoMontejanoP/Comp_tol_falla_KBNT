@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: addition-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: addition-service
+  template:
+    metadata:
+      labels:
+        app: addition-service
+    spec:
+      containers:
+      - name: addition-service
+        image: addition-service:latest
+        ports:
+        - containerPort: 5001
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 5001
+          initialDelaySeconds: 5
+          periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: addition-service
+spec:
+  selector:
+    app: addition-service
+  ports:
+  - port: 5001
+    targetPort: 5001
